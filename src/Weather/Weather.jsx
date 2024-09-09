@@ -38,6 +38,7 @@ const Weather = () => {
 
   return (
     <div className='body'>
+      
       <div className="weather_body">
         <div className="image">
           <img src="https://cdn-icons-png.flaticon.com/128/1146/1146869.png" alt=" weather.png" />
@@ -59,11 +60,14 @@ const Weather = () => {
           <form onSubmit={getWeather} className='form-init'>
             <input
               type="text"
+              
               value={city}
               onChange={(e) => setCity(e.target.value)}
               placeholder="Enter city name"
             />
-            <button type="submit">Get Weather</button>
+            <div className="btn">
+              <button type="submit">Get Weather</button>
+            </div>
           </form>
         </div>
         
