@@ -20,7 +20,7 @@ const Weather = () => {
 
   const formattedDate = `${month} ${day} ${year}`
 
-  const API_KEY = 'ca57cb473bc150e26a798510d230eaaa'; // Replace with your OpenWeatherMap API key
+  const API_KEY = 'api_key'; // Replace with your OpenWeatherMap API key
 
   const getWeather = async (e) => {
     e.preventDefault();
